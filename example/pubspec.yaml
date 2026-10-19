@@ -1,0 +1,23 @@
+name: floreville_upload_manager_example
+description: Demo for floreville_upload_manager — real HTTP uploads against an in-process mock server, with fault injection.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  floreville_upload_manager:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

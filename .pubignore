@@ -1,0 +1,23 @@
+# Mirrors .gitignore (pub ignores .gitignore when .pubignore exists).
+.dart_tool/
+.packages
+build/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+doc/api/
+.env*
+.idea/
+*.iml
+.DS_Store
+example/android/
+example/ios/
+example/linux/
+example/windows/
+example/web/
+
+# Large media stays on GitHub; README links resolve there via `repository`.
+doc/media/demo.gif
+doc/media/demo.mp4
+# Runner only needed for the recorded tour.
+example/macos/

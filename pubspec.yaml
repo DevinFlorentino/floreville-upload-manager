@@ -1,0 +1,49 @@
+name: floreville_upload_manager
+description: >-
+  Offline-tolerant, persistent upload queue for Flutter: retries with backoff,
+  resumable chunked uploads, S3 multipart, progress notifications and widgets.
+version: 1.0.0
+homepage: https://github.com/DevinFlorentino/floreville-upload-manager
+repository: https://github.com/DevinFlorentino/floreville-upload-manager
+issue_tracker: https://github.com/DevinFlorentino/floreville-upload-manager/issues
+topics:
+  - upload
+  - file-upload
+  - retry
+  - s3
+  - offline
+
+screenshots:
+  - description: The example app uploading over every protocol, with fault injection and a live HTTP log.
+    path: doc/media/screenshot.png
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  connectivity_plus: ^7.3.2
+  dio: ^5.11.1
+  flutter_local_notifications: ^22.3.2
+  meta: ^1.15.0
+  mime: ">=1.0.0 <3.0.0"
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+# Dart-level plugin: the native work (notifications, connectivity, app
+# directories) comes from the federated plugins above, so this package needs
+# no platform channel of its own. Web is not supported (dart:io).
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  windows:
