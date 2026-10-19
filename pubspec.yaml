@@ -2,7 +2,7 @@ name: floreville_upload_manager
 description: >-
   Offline-tolerant, persistent upload queue for Flutter: retries with backoff,
   resumable chunked uploads, S3 multipart, progress notifications and widgets.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/DevinFlorentino/floreville-upload-manager
 repository: https://github.com/DevinFlorentino/floreville-upload-manager
 issue_tracker: https://github.com/DevinFlorentino/floreville-upload-manager/issues
