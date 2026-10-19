@@ -1,13 +1,12 @@
 ## 1.0.0
 
-Initial release, derived from `smart_upload_manager` 1.0.1 with the tus.io
-adapter removed.
+Initial release.
 
 - Persistent priority queue with atomic, coalesced JSON storage.
 - Protocols: standard (multipart / raw PUT), resumable (`Content-Range`),
   S3 multipart via presigned parts (`S3MultipartSigner`,
   `HttpS3MultipartSigner`), simulated, custom adapters.
-- Exponential backoff with jitter and `Retry-After`; backoff now actually
+- Exponential backoff with jitter and `Retry-After`; backoff
   gates scheduling and survives restarts.
 - Resume checkpoints (offset / part ETags + file fingerprint) persisted after
   every confirmed chunk.

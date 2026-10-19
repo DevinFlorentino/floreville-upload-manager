@@ -417,15 +417,6 @@ flutter run
   `s3Multipart` for large files.
 * There is no tus.io adapter; add one as a custom adapter if you need it.
 
-## Credits
-
-Derived from [`smart_upload_manager`](https://pub.dev/packages/smart_upload_manager)
-1.0.1 (MIT) by Hamad Anwar, re-engineered and without the tus.io integration.
-Compared with upstream, retry backoff actually gates scheduling, resumable
-offsets and S3 ETags are checkpointed, S3 multipart does the full
-initiate/complete/abort flow, secrets are redacted from disk, and persistence
-is atomic. See the [CHANGELOG](CHANGELOG.md).
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
