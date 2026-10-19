@@ -415,7 +415,6 @@ flutter run
   tasks (`maxConcurrentUploads`).
 * `standard` uploads restart from 0 after an interruption. Use `resumable` or
   `s3Multipart` for large files.
-* There is no tus.io adapter; add one as a custom adapter if you need it.
 
 ## License
 
